@@ -1,0 +1,617 @@
+/* General */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
+}
+/* ***************************************************************************************************** */
+/* Header */
+
+/* ************************************************************************************************** */
+/* hero section */
+.hero {
+  height: 100vh;
+  /* overflow-y: hidden; */
+  /* overflow-x: hidden; */
+  position: relative;
+}
+.hero::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+  background: linear-gradient(to bottom, #000000 -6%, rgba(0, 0, 0, 0) 20%);
+}
+.swiper-slide.hero-background--1 {
+  display: flex;
+  justify-content: center;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+.swiper-slide.hero-background--1 img,
+.swiper-slide.hero-background--2 img,
+.swiper-slide.hero-background--3 img {
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+
+.swiper-slide.hero-background--2 {
+  display: flex;
+  justify-content: center;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+.swiper-slide.hero-background--3 {
+  display: flex;
+  justify-content: center;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+.restaurant-content-container {
+  height: 100vh;
+  width: 545px;
+  background: #005470;
+  z-index: 55;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+.pattern {
+  position: absolute;
+  bottom: 173px;
+  right: 140px;
+  z-index: 9999;
+  height: 50px;
+  width: 50px;
+  color: #fff;
+}
+.logo {
+  margin-top: 180px;
+  margin-left: 50px;
+}
+.logo-img {
+  height: 70px;
+}
+.home-paragraph {
+  height: 20%;
+  overflow-y: scroll;
+  font-size: 18px;
+  color: #fff;
+  margin: 50px;
+}
+.home-actions {
+  position: relative;
+}
+.home-actions a {
+  position: absolute;
+  right: 50px;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 20px;
+}
+.features-container {
+  position: absolute;
+
+  left: 50%;
+  top: 65%;
+  width: 70%;
+  /* transform: translateX(-50%) !important; */
+  z-index: 66;
+}
+.cards-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+.features-card {
+  position: relative;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1),
+    rgba(91, 102, 112, 1)
+  );
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+
+  display: flex;
+  width: 50%;
+  padding: 20px;
+}
+.feature-image-container {
+  margin-top: -50px;
+}
+.feature-image-container img {
+  height: 180px;
+}
+.feature-title {
+  color: #fff;
+  font-size: 18px;
+  position: relative;
+  margin-left: 20px;
+}
+.feature-title::after {
+  content: "";
+  position: absolute;
+  top: 22px;
+  right: 75%;
+  height: 2px;
+  width: 120px;
+  background: #fff;
+}
+.feature-text {
+  font-size: 16px;
+  font-weight: light;
+  margin-left: 20px;
+  color: #fff;
+}
+.feature-action {
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+.feature-action a {
+  text-decoration: none;
+  color: #fff;
+}
+.feature-action a:after,
+.home-actions a:after,
+.story-actions a:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 100%;
+
+  transform: scaleX(1);
+  left: 0;
+  bottom: -3px;
+  transition: all 0.3s ease-in-out;
+}
+.feature-action a:hover:after,
+.home-actions a:hover:after,
+.story-actions a:hover:after {
+  transform: scaleX(0);
+}
+.feature-action a:hover {
+  cursor: pointer;
+}
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 50%;
+}
+
+::-webkit-scrollbar-track {
+  background: #555;
+  border-radius: 555px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 555px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  cursor: pointer;
+}
+/* ************************************************************************************************ *
+/* STORY */
+.story {
+  height: 100vh;
+  background-image: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/our-story.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.story::after {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 100%;
+  top: 0;
+  background: linear-gradient(to bottom, #000000 -6%, rgba(0, 0, 0, 0) 20%);
+
+  z-index: 9;
+}
+.story-content-container {
+  height: 100vh;
+  width: 670px;
+  background: #8d7288;
+  position: absolute;
+  right: 0;
+  z-index: 10;
+}
+.story-heading {
+  margin-top: 150px;
+  color: #fff;
+  margin-left: 50px;
+}
+.story-paragraph {
+  height: 50%;
+  overflow-y: scroll;
+  font-size: 18px;
+  color: #fff;
+  margin: 50px;
+}
+.story-actions {
+  position: relative;
+}
+.story-actions a {
+  position: absolute;
+  right: 50px;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 20px;
+}
+.pattern--2 {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+  width: 670px;
+  z-index: -1;
+  color: #fff;
+}
+/* ************************************************************************************************ */
+
+.header {
+  position: fixed;
+  padding: 40px 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+  display: flex;
+
+  align-items: center;
+}
+.nav-logo {
+  width: 100px;
+  height: 110px;
+  margin-left: 20px;
+}
+.menu-icon {
+  width: 30px;
+  height: 16px;
+  cursor: pointer;
+  position: relative;
+}
+.menu-icon span {
+  background: #fff;
+  height: 2px;
+  position: absolute;
+  width: 100%;
+  left: 0;
+  transition: all 0.3s ease;
+}
+.menu-icon span:first-child {
+  top: 0;
+}
+.menu-icon span:nth-child(2) {
+  top: 10px;
+}
+.menu-icon span:last-child {
+  top: 20px;
+}
+
+.btn-open span:nth-child(2) {
+  opacity: 0;
+}
+
+.btn-open span:first-child {
+  background: #000;
+  top: 6px;
+  transform: rotate(45deg);
+}
+.btn-open span:last-child {
+  background: #000;
+  top: 6px;
+  transform: rotate(-45deg);
+}
+
+.main-nav-list {
+  display: flex;
+  align-items: center;
+  gap: 45px;
+  list-style: none;
+}
+
+.main-nav-link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.main-nav-link.actions {
+  border: 2px solid #fff;
+  font-size: 16px;
+  padding: 10px 20px;
+  transition: all 0.3s ease-in-out;
+}
+.main-nav-link.actions:hover {
+  background: #fff;
+  color: #005470;
+  font-size: 16px;
+}
+.number-container {
+  position: relative;
+}
+.number-container a {
+  text-decoration: none;
+}
+.number {
+  font-size: 35px;
+  color: #fff;
+}
+.number-details {
+  position: absolute;
+  font-size: 15px;
+  color: #fff;
+  font-weight: bold;
+  line-height: 1;
+  top: -9px;
+  left: 60px;
+}
+.hallab {
+  letter-spacing: 2px;
+}
+.number-space {
+  letter-spacing: normal;
+}
+.btn-mobile-nav {
+  border: none;
+  background: none;
+  cursor: pointer;
+  display: none;
+}
+
+.mobile {
+  display: none;
+}
+.copyright {
+  display: none;
+}
+.social-media-container {
+  display: none;
+}
+.main-nav-link.underlinez {
+  position: relative;
+}
+.main-nav-link.underlinez:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  left: 0;
+  bottom: -3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.main-nav-link.underlinez:hover:after {
+  transform: scaleX(1);
+}
+
+@media only screen and (max-width: 1470px) {
+  .main-nav-list {
+    gap: 30px;
+  }
+}
+
+@media only screen and (max-width: 1370px) {
+  .mobile {
+    display: block;
+  }
+  .btn-mobile-nav {
+    display: block;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+  }
+  .number-container {
+    position: absolute;
+    top: 20px;
+  }
+  .main-nav {
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/mobile-background.jpg") !important;
+    background: red;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: all 0.5s;
+    pointer-events: none;
+    visibility: hidden;
+  }
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+  }
+  .nav-open .mobile {
+    display: none;
+  }
+  .main-nav-list {
+    flex-direction: column;
+  }
+  .mobile .number-details {
+    top: 11px;
+  }
+  .number-container.mobile {
+    top: 22px;
+    right: 180px;
+  }
+  .nav-open .number-container {
+    position: absolute;
+    top: 20px;
+    left: 10px;
+  }
+  .nav-open .main-nav-link.actions {
+    color: #5b6670;
+    position: static;
+  }
+  .nav-open .main-nav-link.actions.reserve {
+    border: 2px solid #5b6670;
+  }
+  .nav-open .main-nav-link.actions.order {
+    border: 2px solid #5b6670;
+  }
+  .nav-open .number,
+  .nav-open .number-details {
+    color: #5b6670;
+  }
+  .number-container .number-details {
+    top: 11px;
+  }
+  .nav-open .main-nav-link {
+    color: #5b6670;
+  }
+  .main-nav-link.actions {
+    position: absolute;
+    top: 115px;
+    right: 20px;
+    font-size: 12px;
+    padding-inline: 40px;
+  }
+
+  .nav-open .main-nav-link.actions.mobile {
+    display: none;
+  }
+
+  .nav-open .social-media-container {
+    position: absolute;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    height: 100px;
+  }
+  .social-media-container::before {
+    position: absolute;
+    content: "";
+    height: 1px;
+    width: 350px;
+    background: #5b6670;
+    left: -100px;
+    top: 20px;
+  }
+  .social-media-container li a {
+    color: #5b6670;
+
+    font-size: 30px;
+    position: absolute;
+  }
+  .nav-open .copyright {
+    display: block;
+    color: #5b6670;
+    position: absolute;
+    bottom: 5px;
+  }
+}
+
+@media only screen and (max-width: 990px) {
+  .hero {
+    height: 50vh;
+  }
+  .restaurant-content-container {
+    width: 100%;
+    background: #005470;
+    z-index: 55;
+    position: static;
+    height: 43vh;
+  }
+  .home-paragraph {
+    height: 50%;
+    overflow-y: hidden;
+    font-size: 14px;
+    margin: 30px 50px 0 50px;
+  }
+  .home-actions a {
+    top: -55px;
+    font-size: 16px;
+  }
+  .logo {
+    margin-top: 0;
+    padding-top: 60px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .restaurant-content-container {
+    height: 52vh;
+  }
+
+  .home-actions a {
+    top: -30px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .restaurant-content-container {
+    height: 45vh;
+  }
+
+  .home-actions a {
+    top: 5px;
+  }
+}
+
+.test {
+  background: red;
+  width: 50%;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  align-content: center;
+  margin: 0 auto;
+}
+
+.hidden {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1.5s;
+}
+
+.show {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.hidden-1 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translate(-50%, 100%);
+
+  transition: all 1.5s;
+  transition-delay: 1.5s;
+}
+
+.show-1 {
+  filter: blur(0px);
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
