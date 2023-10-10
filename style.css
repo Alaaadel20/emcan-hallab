@@ -8,6 +8,7 @@
 body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
+  background: red;
 }
 /* ***************************************************************************************************** */
 /* Header */
@@ -128,6 +129,8 @@ body {
   display: flex;
   width: 50%;
   padding: 20px;
+
+  height: 175px;
 }
 .feature-image-container {
   margin-top: -50px;
@@ -214,6 +217,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  z-index: 10;
 }
 .story::after {
   position: absolute;
@@ -534,7 +538,7 @@ body {
 
 @media only screen and (max-width: 990px) {
   .hero {
-    height: 50vh;
+    height: auto;
   }
   .restaurant-content-container {
     width: 100%;
@@ -557,8 +561,28 @@ body {
     margin-top: 0;
     padding-top: 60px;
   }
+  .features-container {
+    top: 60%;
+  }
+  .features-card {
+    min-width: 400px;
+    height: 175px;
+  }
 }
+@media only screen and (max-width: 770px) {
+  .features-container {
+    top: 15%;
+    transform: scale(0.9);
+  }
+  .cards-container {
+    flex-direction: column;
+    gap: 10px;
+  }
 
+  .features-card {
+    height: 175px;
+  }
+}
 @media only screen and (max-width: 600px) {
   .restaurant-content-container {
     height: 52vh;
@@ -567,14 +591,19 @@ body {
   .home-actions a {
     top: -30px;
   }
+  .nav-logo {
+    width: 75px;
+    height: 82.5px;
+    margin-left: 20px;
+  }
 }
 @media only screen and (max-width: 425px) {
   .restaurant-content-container {
-    height: 45vh;
+    height: 60vh;
   }
 
   .home-actions a {
-    top: 5px;
+    top: -50px;
   }
 }
 
