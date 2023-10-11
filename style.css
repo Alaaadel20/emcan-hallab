@@ -1,4 +1,5 @@
 /* General */
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Almarai:wght@300;400;700;800&family=Roboto:ital,wght@1,500&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -8,7 +9,6 @@
 body {
   font-family: "Rubik", sans-serif;
   overflow-x: hidden;
-  background: red;
 }
 /* ***************************************************************************************************** */
 /* Header */
@@ -211,13 +211,24 @@ body {
 /* ************************************************************************************************ *
 /* STORY */
 .story {
-  height: 100vh;
+  /* height: 100vh;
   background-image: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/our-story.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
-  z-index: 10;
+  z-index: 10; */
+}
+
+.story-background {
+  display: flex;
+  justify-content: center;
+  width: 100vw !important;
+  height: 100vh !important;
+  object-fit: cover !important;
+}
+.story {
+  position: relative;
 }
 .story::after {
   position: absolute;
@@ -235,6 +246,7 @@ body {
   background: #8d7288;
   position: absolute;
   right: 0;
+  top: 0;
   z-index: 10;
 }
 .story-heading {
@@ -269,6 +281,130 @@ body {
   z-index: -1;
   color: #fff;
 }
+/* ************************************************************************************************ */
+/* MENU */
+.menu {
+  height: 100vh;
+  background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/mobile-background.jpg") !important;
+
+  position: relative;
+}
+.menu-heading {
+  padding-top: 200px;
+
+  font-family: "Allura";
+  text-align: center;
+  font-weight: 500;
+  font-size: 72px;
+  color: #5b6670;
+}
+.background-dish {
+  position: absolute;
+  right: 20px;
+  top: 110px;
+}
+
+.tab-menu {
+  list-style: none;
+  white-space: nowrap;
+  padding-left: 16px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5b6670cc;
+  overflow-x: scroll;
+}
+.tab-menu::-webkit-scrollbar {
+  display: none;
+}
+.tab-btn {
+  display: inline-block;
+  margin-right: 45px;
+  font-size: 14px;
+  font-color: #5b6670cc;
+  font-weight: 500;
+  transition: all 0.3s;
+  scroll-behavior: unset;
+}
+
+.tab-btn:hover,
+.tab-btn.active {
+  color: #ca8342;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-btn:after,
+.tab-btn.active:after {
+  content: "";
+  position: absolute;
+  background: #ca8342;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  left: 0;
+  bottom: -21px;
+  transition: all 0.3s ease-in-out;
+}
+.tab-btn:hover:after {
+  transform: scaleX(1);
+}
+
+.tab {
+  transform: translateX(25px);
+  content-visibility: hidden;
+}
+.tab.active {
+  transform: translateX(0);
+  content-visibility: visible;
+}
+
+.image-container {
+  height: 50vh;
+
+  width: 30vw !important;
+}
+.menu-image-banner {
+  height: 100%;
+  width: 100%;
+}
+.menu-items-container {
+  height: 50vh;
+  transition: all 0.3s;
+  overflow-y: scroll;
+}
+
+.menu-items-container::-webkit-scrollbar {
+  width: 2px;
+}
+
+.menu-items-container::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+
+.menu-items-container::-webkit-scrollbar-thumb {
+  background-color: #888;
+}
+.menu-items-container ul {
+  columns: 2;
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  font-color: #5b6670;
+}
+.menu-items-container ul li {
+  break-inside: avoid;
+  page-break-inside: avoid;
+
+  margin-bottom: 15px;
+  list-style: none;
+}
+.item-name {
+  font-size: 16px;
+  font-weight: 500;
+}
+.item-details {
+  font-size: 14px;
+  font-weight: 300;
+}
+
 /* ************************************************************************************************ */
 
 .header {
@@ -432,7 +568,7 @@ body {
   }
   .main-nav {
     background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/mobile-background.jpg") !important;
-    background: red;
+
     position: absolute;
     top: 0;
     left: 0;
@@ -538,14 +674,17 @@ body {
 
 @media only screen and (max-width: 990px) {
   .hero {
-    height: auto;
+    height: 120vh;
+  }
+  .swiper {
+    height: 70vh;
   }
   .restaurant-content-container {
     width: 100%;
     background: #005470;
     z-index: 55;
     position: static;
-    height: 43vh;
+    height: 50vh;
   }
   .home-paragraph {
     height: 50%;
@@ -567,6 +706,15 @@ body {
   .features-card {
     min-width: 400px;
     height: 175px;
+  }
+  .story-content-container {
+    width: 100%;
+    height: 70vh;
+    position: static;
+  }
+  .story-heading {
+    padding-top: 50px;
+    margin-top: 0;
   }
 }
 @media only screen and (max-width: 770px) {
@@ -595,6 +743,9 @@ body {
     width: 75px;
     height: 82.5px;
     margin-left: 20px;
+  }
+  .story-content-container {
+    height: 30vh;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -642,5 +793,81 @@ body {
 .show-1 {
   filter: blur(0px);
   opacity: 1;
-  transform: translate(-50%, 0);
+  transform: translateX(-50%);
+}
+
+.hidden-2 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+
+  transition: all 1.5s ease-in-out;
+}
+
+.show-2 {
+  filter: blur(0px);
+
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.item:nth-child(2) {
+  transition-delay: 200ms;
+}
+.item:nth-child(3) {
+  transition-delay: 400ms;
+}
+.item:nth-child(4) {
+  transition-delay: 600ms;
+}
+.item:nth-child(5) {
+  transition-delay: 800ms;
+}
+.item:nth-child(6) {
+  transition-delay: 1000ms;
+}
+
+.item:nth-child(7) {
+  transition-delay: 1200ms;
+}
+.item:nth-child(8) {
+  transition-delay: 1400ms;
+}
+.item:nth-child(9) {
+  transition-delay: 1600ms;
+}
+.item:nth-child(10) {
+  transition-delay: 1800ms;
+}
+.item:nth-child(11) {
+  transition-delay: 2000ms;
+}
+
+.item:nth-child(12) {
+  transition-delay: 2200ms;
+}
+.item:nth-child(13) {
+  transition-delay: 2400ms;
+}
+.item:nth-child(14) {
+  transition-delay: 2600ms;
+}
+.item:nth-child(15) {
+  transition-delay: 2800ms;
+}
+.item:nth-child(16) {
+  transition-delay: 3000ms;
+}
+
+.item:nth-child(17) {
+  transition-delay: 3200ms;
+}
+.item:nth-child(18) {
+  transition-delay: 3400ms;
+}
+.item:nth-child(19) {
+  transition-delay: 3600ms;
+}
+.item:nth-child(20) {
+  transition-delay: 3800ms;
 }
