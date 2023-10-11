@@ -2,11 +2,18 @@
 
 const btnNavEl = document.querySelector(".btn-mobile-nav");
 const headerEl = document.querySelector(".header");
-
+const btnEl = document.querySelectorAll(".underlinez");
 btnNavEl.addEventListener("click", function () {
   headerEl.classList.toggle("nav-open");
+
   btnNavEl.classList.toggle("btn-open");
 });
+btnEl.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    headerEl.classList.toggle("nav-open");
+  });
+});
+
 /////////////////////////////////////////////////////////////////////////
 const observer = new IntersectionObserver((entries) => {
   entries.forEach((entry) => {
@@ -83,6 +90,16 @@ tabMenu.addEventListener("mousedown", () => {
   activeDrag = true;
 });
 
-tabMenu.addEventListener("click", () => {
-  console.log(tabMenu);
+/////////////////////////////////////////////////////////////
+window.addEventListener("scroll", function () {
+  var header = document.getElementById("header");
+  var targetSection = document.getElementById("menu");
+  var scrollPosition = window.scrollY;
+  var sectionOffsetTop = targetSection.offsetTop;
+
+  if (scrollPosition >= sectionOffsetTop) {
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
 });

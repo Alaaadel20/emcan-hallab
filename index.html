@@ -25,25 +25,35 @@
   <body>
     <!-- ----------------------------------------------------------------------------------------------------- -->
 
-    <header class="header">
+    <header class="header" id="header">
       <a href="#"
         ><img
           src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/logo-white.svg"
           alt=""
           class="nav-logo"
       /></a>
+      <a href="#"
+        ><img
+          src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/logo-darken.svg"
+          alt=""
+          class="nav-logo logo-dark"
+      /></a>
       <nav class="main-nav">
         <ul class="main-nav-list">
           <li>
-            <a class="main-nav-link underlinez" aria-current="page" href="#">
+            <a
+              class="main-nav-link underlinez"
+              aria-current="page"
+              href="#home"
+            >
               Home
             </a>
           </li>
           <li>
-            <a class="main-nav-link underlinez" href="#"> Our Story </a>
+            <a class="main-nav-link underlinez" href="#story"> Our Story </a>
           </li>
           <li>
-            <a class="main-nav-link underlinez" href="#"> Menu & Sweets </a>
+            <a class="main-nav-link underlinez" href="#menu"> Menu & Sweets </a>
           </li>
           <li>
             <a class="main-nav-link underlinez" href="#"> Locations </a>
@@ -129,7 +139,7 @@
 
     <!-- ----------------------------------------------------------------------------------------------------- -->
     <main>
-      <section class="hero">
+      <section class="hero" id="home">
         <div class="swiper mySwiper">
           <div class="swiper-wrapper">
             <div class="swiper-slide hero-background--1">
@@ -214,7 +224,7 @@
         </div>
       </section>
       <!-- --------------------------------------------------------------------------------------------------- -->
-      <section class="story">
+      <section class="story" id="story">
         <div>
           <img
             src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/our-story.jpg"
@@ -222,7 +232,7 @@
             class="story-background"
           />
         </div>
-        <div class="story-content-container hidden-2 show">
+        <div class="story-content-container hidden-2">
           <h2 class="story-heading">Our Story</h2>
 
           <p class="story-paragraph">
@@ -253,7 +263,7 @@
       </section>
 
       <!-- -------------------------------------------------------------------------------------------------------- -->
-      <section class="menu">
+      <section class="menu" id="menu">
         <h1 class="menu-heading">menu & sweets</h1>
         <div class="background-dish">
           <img src="./imgs/menu-sweets.png" alt="" />
@@ -443,7 +453,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -456,7 +466,7 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="hidden-2">
                         <div class="item-name">Stuffed Lamb</div>
                         <div class="item-details">
                           Roasted lamb meat served with oriental rice, nuts
@@ -474,7 +484,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -487,32 +497,32 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="hidden-2">
                         <div class="item-name">Vegetables Soup</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Tomato Basil Soup</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mushroom Soup</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lentil Soup</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken with Mushroom Soup</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Cream Soup</div>
                         <div class="item-details"></div>
                       </li>
@@ -527,7 +537,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -540,14 +550,14 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="hidden-2">
                         <div class="item-name">
                           Yogurt with Cucumber &amp; Mint
                         </div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Waraq Enab</div>
                         <div class="item-details">
                           Vine leaves stuffed with rice, parsley, onion, tomato
@@ -555,21 +565,21 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Tomato Slices with Garlic</div>
                         <div class="item-details">
                           Tomato slices with sumac &amp; garlic
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Shankleesh</div>
                         <div class="item-details">
                           Dried labneh with vegetables &amp; olive oil
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Nkhaat</div>
                         <div class="item-details">
                           Boiled lamb brain marinated with garlic, lemon &amp;
@@ -577,14 +587,14 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Moutabal</div>
                         <div class="item-details">
                           Eggplant blended with tahina, lemon &amp; olive oil
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mohamara</div>
                         <div class="item-details">
                           Spicy red pepper paste mixed with onion, bread crumbs
@@ -592,12 +602,12 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mixed Vegetable Platter</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Makdous</div>
                         <div class="item-details">
                           Pickled eggplant stuffed with walnuts &amp; red pepper
@@ -605,7 +615,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lsanat</div>
                         <div class="item-details">
                           Boiled lamb tongue marinated with garlic, lemon &amp;
@@ -613,42 +623,42 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Loubieh Bel Zeit</div>
                         <div class="item-details">
                           Sauteed green beans with tomato, onion &amp; olive oil
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Labneh with Garlic</div>
                         <div class="item-details">
                           Labneh with garlic, dried mint &amp; olive oil
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hommus</div>
                         <div class="item-details">
                           Chickpeas blended with tahina, lemon &amp; olive oil
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hindbeh</div>
                         <div class="item-details">
                           Green chicory with onion &amp; olive oil
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grilled Halloumi</div>
                         <div class="item-details">
                           Slices of grilled halloumi cheese
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Baba Ghanouj</div>
                         <div class="item-details">
                           Grilled eggplant with tomato, green pepper, lemon
@@ -666,7 +676,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -679,7 +689,7 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Spiced Lean Meat</div>
                         <div class="item-details">
                           Fresh lamb meat minced with onion &amp; mint, served
@@ -687,7 +697,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Raw Kebeh</div>
                         <div class="item-details">
                           Fresh lamb meat minced with bulgur, onion &amp; mint,
@@ -705,7 +715,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -718,12 +728,12 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="hidden-2">
                         <div class="item-name">White Rice</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Spicy Potato</div>
                         <div class="item-details">
                           Potato cubes seasoned with coriander, garlic &amp;
@@ -731,7 +741,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Sojok</div>
                         <div class="item-details">
                           Spicy homemade sausages sauteed in lemon sauce with
@@ -739,19 +749,19 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Saffron Rice</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Nkhaat Pane</div>
                         <div class="item-details">
                           Boiled lamb brain coated in bread crumbs and fried
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mixed Shawarma</div>
                         <div class="item-details">
                           Meat &amp; chicken shawarma served with vegetables,
@@ -759,7 +769,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Meat with Tomato</div>
                         <div class="item-details">
                           Pan fried slices of tender meat with onion &amp;
@@ -767,7 +777,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Meat with Mushroom</div>
                         <div class="item-details">
                           Pan fried slices of tender meat with onion &amp;
@@ -775,14 +785,14 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Meat Shawarma</div>
                         <div class="item-details">
                           Served with vegetables &amp; tahina sauce
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Makanek</div>
                         <div class="item-details">
                           Homemade sausages sauteed in lemon sauce with
@@ -790,7 +800,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">
                           Kofta Balls with Pomegranate
                         </div>
@@ -800,7 +810,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hommus with Shawarma</div>
                         <div class="item-details">
                           Chickpeas blended with tahina, topped with shawarma
@@ -808,7 +818,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hommus with Pine nuts</div>
                         <div class="item-details">
                           Chickpeas blended with tahina, topped with butter
@@ -816,7 +826,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hommus with Meat</div>
                         <div class="item-details">
                           Chickpeas blended with tahina, topped with lamb meat,
@@ -824,7 +834,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hommus Fatteh with Meat</div>
                         <div class="item-details">
                           Toasted bread, chickpeas, yogurt, tahina, butter, pine
@@ -832,7 +842,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hommus Fatteh</div>
                         <div class="item-details">
                           Toasted bread, chickpeas, yogurt, tahina, butter &amp;
@@ -840,7 +850,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Fried Lamb Liver</div>
                         <div class="item-details">
                           Fried lamb liver with garlic &amp; lemon with
@@ -848,12 +858,12 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">French Fries</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Falafel Platter</div>
                         <div class="item-details">
                           Fried falafel served with vegetables, pickles &amp;
@@ -861,7 +871,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Eggplant Fatteh</div>
                         <div class="item-details">
                           Fried eggplant topped with minced meat in tomato sauce
@@ -869,21 +879,21 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Wings</div>
                         <div class="item-details">
                           Fried wings with coriander, garlic &amp; lemon
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Shawarma</div>
                         <div class="item-details">
                           Served with french fries, pickles &amp; garlic
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Liver</div>
                         <div class="item-details">
                           Fried chicken liver with garlic &amp; lemon with
@@ -901,7 +911,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -914,28 +924,28 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="hidden-2">
                         <div class="item-name">Spinach Sambousek</div>
                         <div class="item-details">
                           Baked soft dough filled with sauteed spinach (5 pcs)
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mixed Pastry</div>
                         <div class="item-details">
                           6 Pieces of mixed sambousek, 4 pieces of mixed kebbe
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Meat Sambousek</div>
                         <div class="item-details">
                           Fried soft dough filled with seasoned meat (5 pcs)
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Meat Kebbe</div>
                         <div class="item-details">
                           Fried dough of minced meat and bulgur wheat filled
@@ -943,7 +953,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Kebbe</div>
                         <div class="item-details">
                           Fried dough of minced chicken and bulgur wheat filled
@@ -951,7 +961,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Cheese Sambousek</div>
                         <div class="item-details">
                           Fried soft dough filled with herb seasoned cheese (5
@@ -959,7 +969,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Cheese Rolls</div>
                         <div class="item-details">
                           Filo pastry filled with herb seasoned cheese and deep
@@ -967,7 +977,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Baalbakieh</div>
                         <div class="item-details">
                           Baked soft dough filled with seasoned meat (5 pcs)
@@ -984,7 +994,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -997,7 +1007,7 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="hidden-2">
                         <div class="item-name">Shish Tawouk</div>
                         <div class="item-details">
                           Skewers of marinated &amp; grilled chicken cubes,
@@ -1005,7 +1015,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Msabaha with Pine nuts</div>
                         <div class="item-details">
                           Skewers of seasoned &amp; minced lamb meat with onion
@@ -1013,7 +1023,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mixed Grill with Tawouk</div>
                         <div class="item-details">
                           A combination of Kabab, Lamb Kabab &amp; Shish Tawouk
@@ -1021,7 +1031,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mixed Grill of Lamb Meat</div>
                         <div class="item-details">
                           A combination of Kabab, Msabaha, Lamb Cubes &amp; Lamb
@@ -1029,7 +1039,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mixed Grill</div>
                         <div class="item-details">
                           A combination of Kabab &amp; Lamb Cubes skewers,
@@ -1037,7 +1047,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lamb Cubes</div>
                         <div class="item-details">
                           Skewers of marinated &amp; grilled tender lamb meat
@@ -1045,7 +1055,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lamb Chops</div>
                         <div class="item-details">
                           Marinated &amp; grilled ribs of lamb meat, served with
@@ -1053,14 +1063,14 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Kabab Orfali</div>
                         <div class="item-details">
                           Kabab balls &amp; Grilled Tomatoes
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Kabab Khoush Khash</div>
                         <div class="item-details">
                           Skewers of seasoned &amp; minced lamb meat with onion
@@ -1068,7 +1078,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Kabab</div>
                         <div class="item-details">
                           Skewers of seasoned &amp; minced lamb meat with onion
@@ -1076,7 +1086,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Half Boneless Chicken</div>
                         <div class="item-details">
                           Marinated &amp; grilled chicken served with french
@@ -1084,7 +1094,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">
                           Grilled Vegetables with Lamb Fat
                         </div>
@@ -1093,7 +1103,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grilled Makanek</div>
                         <div class="item-details">
                           Grilled skewers of homemade sausages served with
@@ -1101,7 +1111,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grilled Lamb Liver</div>
                         <div class="item-details">
                           Seasoned lamb liver with lamb fat served with french
@@ -1109,7 +1119,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Full Mixed Grill</div>
                         <div class="item-details">
                           A combination of Kabab, Chicken Kabab, Msabaha, Lamb
@@ -1118,7 +1128,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Wings</div>
                         <div class="item-details">
                           Marinated &amp; grilled chicken wings served with
@@ -1126,7 +1136,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Kabab</div>
                         <div class="item-details">
                           Minced &amp; seasoned chicken served with french fries
@@ -1134,7 +1144,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Arayes</div>
                         <div class="item-details">
                           Grilled bread with minced lamb meat &amp; vegetables
@@ -1151,7 +1161,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -1164,7 +1174,7 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Shrimp Pane</div>
                         <div class="item-details">
                           Breaded &amp; fried shrimps, served with coleslaw,
@@ -1172,7 +1182,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grilled Shrimps</div>
                         <div class="item-details">
                           Grilled shrimps, served with saffron rice &amp;
@@ -1180,7 +1190,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grilled Lobster</div>
                         <div class="item-details">
                           Grilled 900g lobster served with saffron rice &amp;
@@ -1188,7 +1198,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grilled Hammour Fillet</div>
                         <div class="item-details">
                           Grilled hammour fillet, served with saffron rice &amp;
@@ -1196,7 +1206,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Fried Hammour Fillet</div>
                         <div class="item-details">
                           Breaded &amp; fried hammour fillet, served with
@@ -1214,7 +1224,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -1227,62 +1237,62 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Sojok</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Shish Tawouk</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Shawarma: Meat / Chicken</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Roast Beef</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Nkhaat</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Makanek</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lsanat</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lamb Cubes</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Kabab</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Mushroom</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Kabab</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Boneless Chicken</div>
                         <div class="item-details"></div>
                       </li>
@@ -1297,7 +1307,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -1310,7 +1320,7 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">
                           Steak Fillet with Pepper Sauce
                         </div>
@@ -1320,7 +1330,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">
                           Steak Fillet with Mushroom Sauce
                         </div>
@@ -1331,7 +1341,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Meat Escalope</div>
                         <div class="item-details">
                           Fried breaded meat, served with coleslaw &amp; french
@@ -1339,7 +1349,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Supreme</div>
                         <div class="item-details">
                           Sliced chicken breast in a mushroom creamy sauce,
@@ -1348,7 +1358,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Chicken Escalope</div>
                         <div class="item-details">
                           Fried breaded chicken, served with coleslaw &amp;
@@ -1366,7 +1376,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -1379,109 +1389,109 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Sweet Melon</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Strawberry</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Pomegranate</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Pineapple</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Orange</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mango</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lemon with mint</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Lemon</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Laban</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Kiwi</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Jallab</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Guava</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grapes</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Grapefruit</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">
                           Fruit Pieces with fresh Cream
                         </div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Cocktail Layers</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Cocktail</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Carrot</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Banana with Milk</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Avocado</div>
                         <div class="item-details"></div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Apple</div>
                         <div class="item-details"></div>
                       </li>
@@ -1496,7 +1506,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -1509,7 +1519,7 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Tabouleh Quinoa</div>
                         <div class="item-details">
                           Finely chopped parsley mixed with tomato, green onion,
@@ -1517,7 +1527,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Tabouleh</div>
                         <div class="item-details">
                           Finely chopped parsley mixed with tomato, green onion,
@@ -1525,7 +1535,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Shrimp Caesar Salad</div>
                         <div class="item-details">
                           Lettuce, parmesan cheese, grilled shrimps &amp;
@@ -1533,7 +1543,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Rocca Salad</div>
                         <div class="item-details">
                           Sliced rocca leaves, tomato, onion &amp; sumac tossed
@@ -1541,7 +1551,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Quinoa Avocado</div>
                         <div class="item-details">
                           Baby spinach leaves topped with quinoa, beetroot,
@@ -1549,7 +1559,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Green Salad</div>
                         <div class="item-details">
                           A mix of lettuce, cucumber, tomato, green pepper with
@@ -1557,7 +1567,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Greek Salad</div>
                         <div class="item-details">
                           Lettuce, tomato, cucumber, green pepper, feta cheese
@@ -1565,7 +1575,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Freekeh Salad</div>
                         <div class="item-details">
                           Cooked freekeh wheat mixed with tomato, cocumber,
@@ -1573,7 +1583,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Fatoush</div>
                         <div class="item-details">
                           Fresh vegetables topped with roasted bread, sumac,
@@ -1581,7 +1591,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Caesar Salad with Chicken</div>
                         <div class="item-details">
                           Lettuce, parmesan cheese, grilled chicken breast &amp;
@@ -1589,7 +1599,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Bakleh &amp; Tomato</div>
                         <div class="item-details">
                           Watercress with onion, tomato &amp; sumac tossed in
@@ -1607,7 +1617,7 @@
           <div class="tab">
             <div class="container-fluid p-0">
               <div class="row no-gutters">
-                <div class="col-lg-4 image-container">
+                <div class="col-lg-4 image-container hidden-2">
                   <div
                     class="menu-image-banner"
                     style="
@@ -1620,40 +1630,40 @@
                 <div class="col-lg-8 menu-listing-container">
                   <div class="menu-items-container">
                     <ul>
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Ward Al Sham</div>
                         <div class="item-details">
                           Filo pastry stuffed with fresh cream
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Rice with Milk</div>
                         <div class="item-details">
                           A homemade milk custard with rice
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mohalabiah with Fresh Cream</div>
                         <div class="item-details">
                           A homemade milk custard topped with fresh cream
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mohalabiah</div>
                         <div class="item-details">A homemade milk custard</div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Mafroukeh</div>
                         <div class="item-details">
                           Semolina dough topped with fresh cream and nuts
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Maamoul Mad Kashtah</div>
                         <div class="item-details">
                           Baked maamoul semolina dough stuffed with fresh cream
@@ -1661,35 +1671,35 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Kounafa Cheese</div>
                         <div class="item-details">
                           Semolina dough stuffed with cheese
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Karabij</div>
                         <div class="item-details">
                           Maamoul stuffed with pistachio and served with natef
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Jazareiah</div>
                         <div class="item-details">
                           Homemade pumpkin jam mixed with fine nuts
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Ice Cream with Ghazal</div>
                         <div class="item-details">
                           Cotton candy with mistika or pistachio ice cream
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Ice Cream</div>
                         <div class="item-details">
                           Selection of ice cream from the display Chocolate,
@@ -1697,7 +1707,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hallawet Algeben (rolled)</div>
                         <div class="item-details">
                           Cooked cheese and semolina dough filled with homemade
@@ -1705,7 +1715,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Hallawet Algeben (falat)</div>
                         <div class="item-details">
                           Cooked cheese and semolina dough topped with homemade
@@ -1713,7 +1723,7 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">
                           Fresh Cream with Honey &amp; Fruits
                         </div>
@@ -1722,21 +1732,21 @@
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Fresh Cream with Honey</div>
                         <div class="item-details">
                           Homemade fresh cream topped with honey
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Choice of Cake</div>
                         <div class="item-details">
                           Selection of cake from the display
                         </div>
                       </li>
 
-                      <li>
+                      <li class="item hidden-2">
                         <div class="item-name">Baklawah (Assorted)</div>
                         <div class="item-details">
                           A selection of homemade baklawah stuffed with fine
