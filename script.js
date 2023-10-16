@@ -114,7 +114,7 @@ tabMenu.addEventListener("mousedown", () => {
 /////////////////////////////////////////////////////////////
 window.addEventListener("scroll", function () {
   const header = document.getElementById("header");
-  const targetSection = document.getElementById("menu");
+  const targetSection = document.getElementById("story");
   const scrollPosition = window.scrollY;
   const sectionOffsetTop = targetSection.offsetTop;
   const sectionOffsetBottom = targetSection.offsetBottom;
@@ -128,26 +128,26 @@ window.addEventListener("scroll", function () {
   }
 });
 
-window.addEventListener("scroll", function () {
-  const header = document.getElementById("header");
-  const targetSectionCatering = document.getElementById("catering");
-  const scrollPosition = window.scrollY;
-  const sectionOffsetTop = targetSectionCatering.offsetTop;
-  console.log(scrollPosition);
-  if (scrollPosition >= sectionOffsetTop) {
-    header.classList.remove("scrolled");
-  }
-});
-window.addEventListener("scroll", function () {
-  const header = document.getElementById("header");
-  const targetSection = document.getElementById("footer");
-  const scrollPosition = window.scrollY;
-  const sectionOffsetTop = targetSection.offsetTop;
-  const sectionOffsetBottom = targetSection.offsetBottom;
-  if (scrollPosition >= sectionOffsetTop) {
-    header.classList.add("scrolled");
-  }
-});
+// window.addEventListener("scroll", function () {
+//   const header = document.getElementById("header");
+//   const targetSectionCatering = document.getElementById("catering");
+//   const scrollPosition = window.scrollY;
+//   const sectionOffsetTop = targetSectionCatering.offsetTop;
+//   console.log(scrollPosition);
+//   if (scrollPosition >= sectionOffsetTop) {
+//     header.classList.remove("scrolled");
+//   }
+// });
+// window.addEventListener("scroll", function () {
+//   const header = document.getElementById("header");
+//   const targetSection = document.getElementById("footer");
+//   const scrollPosition = window.scrollY;
+//   const sectionOffsetTop = targetSection.offsetTop;
+//   const sectionOffsetBottom = targetSection.offsetBottom;
+//   if (scrollPosition >= sectionOffsetTop) {
+//     header.classList.add("scrolled");
+//   }
+// });
 /////////////////////////////////////////////////////////////////////////////////
 const fullImgBox = document.getElementById("fullImgBox");
 const fullImg = document.getElementById("fullImg");

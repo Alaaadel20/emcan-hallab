@@ -456,7 +456,8 @@ body {
 .location-card {
   position: relative;
   display: flex;
-  min-width: 300px;
+ 
+  min-width: 310px;
   height: 150px;
   gap: 20px;
   padding: 20px;
@@ -513,6 +514,7 @@ body {
   position: absolute;
   bottom: -25px;
   left: 220px;
+  
 }
 .list-svg-2 {
   position: absolute;
@@ -1188,6 +1190,8 @@ body {
   transition: all 0.5s;
 }
 .header.scrolled {
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/mobile-background.jpg") !important;
+   box-shadow: 1px 2px 17px -5px rgba(0,0,0,0.75);
 }
 .scrolled a {
   color: #005470;
@@ -1406,10 +1410,10 @@ body {
     position: static;
   }
   .nav-open .main-nav-link.actions.reserve {
-    border: 2px solid #5b6670;
+    font-size:18px;
   }
   .nav-open .main-nav-link.actions.order {
-    border: 2px solid #5b6670;
+  font-size:18px;
   }
   .nav-open .number,
   .nav-open .number-details {
@@ -1718,7 +1722,13 @@ height:60vh;
     cursor:pointer;
   }
  
-
+.list-svg-1,
+.list-svg-2,
+.list-svg-3,
+.list-svg-4
+{
+    display:none !important;
+}
 }
 
 @media only screen and (max-width: 770px) {
@@ -1741,6 +1751,12 @@ height:60vh;
   .catering-heading-2{
     width:80%;
   
+  }
+  .location-img1{
+    display:none;
+  }
+  |svg{
+    display:none !important;
   }
 }
 
@@ -1848,7 +1864,7 @@ height:60vh;
    
     gap:10px;
     overflow-y:auto;
-    height:800px;
+
 }
 .gallery-1 img{
   width:100%;
