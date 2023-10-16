@@ -173,7 +173,8 @@ body {
 }
 .feature-action a:after,
 .home-actions a:after,
-.story-actions a:after {
+.story-actions a:after,
+.catering-actions a:after {
   content: "";
   position: absolute;
   background: #fff;
@@ -187,7 +188,8 @@ body {
 }
 .feature-action a:hover:after,
 .home-actions a:hover:after,
-.story-actions a:hover:after {
+.story-actions a:hover:after,
+.catering-actions a:after {
   transform: scaleX(0);
 }
 .feature-action a:hover {
@@ -260,7 +262,7 @@ body {
   margin-left: 50px;
 }
 .story-paragraph {
-  height: 50%;
+  height: 40%;
   overflow-y: scroll;
   font-size: 18px;
   color: #fff;
@@ -412,9 +414,768 @@ body {
   font-size: 14px;
   font-weight: 300;
 }
+/* ************************************************************************************************ */
+/* LOCATIONS */
+.locations {
+
+  position: relative;
+}
+.location-heading {
+  font-family: "Allura";
+  text-align: center;
+  font-size: 64px;
+  font-weight: 800px;
+  color: #5b6670;
+  padding-top: 150px;
+}
+.location-text {
+  margin-left: 40px;
+  color: #5b6670;
+  line-height: 1.7;
+  font-weight: 14px;
+  width: 40%;
+}
+.map-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  z-index: -1;
+}
+.map-container img {
+  height: 100%;
+}
+.location-container {
+  width: 40%;
+}
+.locations-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+.location-card {
+  position: relative;
+  display: flex;
+  min-width: 300px;
+  height: 150px;
+  gap: 20px;
+  padding: 20px;
+  background: #fff;
+  box-shadow: 0 2px 20px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: all 0.3s;
+  position: relative;
+
+  transition: all 0.1s;
+}
+.location-card:hover {
+  background: #005470;
+  color: #fff;
+  cursor: pointer;
+}
+.loaction-img-box {
+  height: 50px;
+}
+.loaction-img-box img {
+  height: 100%;
+}
+.location-name {
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.location-address {
+  font-size: 11px;
+}
+.location-phone {
+  font-size: 12px;
+}
+.location-phone span {
+  margin-right: 10px;
+}
+.location-time {
+  font-size: 12px;
+}
+.location-time span {
+  margin-right: 10px;
+}
+.loaction-menu {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+}
+.menu-icon {
+  position: absolute;
+
+  top: 4px;
+}
+.list-svg-1 {
+  position: absolute;
+  bottom: -25px;
+  left: 220px;
+}
+.list-svg-2 {
+  position: absolute;
+  bottom: -45px;
+  left: 20px;
+}
+.list-svg-3 {
+  position: absolute;
+  bottom: -25px;
+  left: 20px;
+}
+.list-svg-4 {
+    position: absolute;
+    bottom: -42px;
+    left: 20px;
+  }
+.path-1-1 {
+  stroke-dasharray: 2000;
+  stroke-dashoffset: 2000;
+  stroke-width: 2;
+  z-index: -1 !important;
+}
+.path-1-2 {
+  position: absolute;
+  bottom: 245px;
+  right: 80px;
+  opacity: 0;
+  stroke-dasharray: 12;
+  stroke-dashoffset: 2;
+  stroke-width: 2;
+  z-index: -1 !important;
+}
+.location-card:hover .path-1-1 {
+  animation: animate 2s linear forwards;
+  animation-direction: reverse;
+
+  z-index: -1 !important;
+}
+.location-card:hover .path-1-2 {
+  opacity: 1;
+}
+@keyframes animate {
+  0% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 2000;
+  }
+}
+.location-point.location1:after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #005470;
+    border-radius: 50%;
+    left:1410px;
+    top:-50px;
+}
+.location-point.location2:after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #005470;
+    border-radius: 50%;
+    left:960px;
+    top:-10px;
+}
+.location-point.location3:after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #005470;
+    border-radius: 50%;
+    left:1210px;
+    top:-35px;
+}
+.location-point.location4:after{
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: #005470;
+    border-radius: 50%;
+    left:1010px;
+    top:-20px;
+}
+.location-img1{
+    position:absolute;
+    right:200px;
+    bottom:200px;
+}
+.location-img2{
+    position:absolute;
+    right:770px;
+    bottom:50px;
+}
+.hallab-logo--1{
+    content: "";
+    width: 62px;
+    height: 62px;
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/location-logo.svg") no-repeat;
+    position: absolute;
+    bottom:140px;
+    left: 1390px;
+    opacity: 0;
+    transition:all 1s;
+}
+.location-card:hover .hallab-logo--1{
+    opacity: 1;
+}
+.hallab-logo--2{
+    content: "";
+    width: 62px;
+    height: 62px;
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/location-logo.svg") no-repeat;
+    position: absolute;
+    bottom:140px;
+    left: 940px;
+    opacity: 0;
+    transition:all 1s;
+}
+.location-card:hover .hallab-logo--2{
+    opacity: 1;
+}
+.hallab-logo--3{
+    content: "";
+    width: 62px;
+    height: 62px;
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/location-logo.svg") no-repeat;
+    position: absolute;
+    bottom:140px;
+    left: 1190px;
+    opacity: 0;
+    transition:all 1s;
+}
+.location-card:hover .hallab-logo--3{
+    opacity: 1;
+}
+.hallab-logo--4{
+    content: "";
+    width: 62px;
+    height: 62px;
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/location-logo.svg") no-repeat;
+    position: absolute;
+    bottom:140px;
+    left: 990px;
+    opacity: 0;
+    transition:all 1s;
+}
+.location-card:hover .hallab-logo--4{
+    opacity: 1;
+}
+
 
 /* ************************************************************************************************ */
+/* CATERING */
+.catering {
 
+  background-image: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/catering-bg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  z-index: 10;
+}
+
+.catering {
+  position: relative;
+}
+
+.catering-content-container {
+  height: 100vh;
+  width: 550px;
+  background: #5b6670;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 10;
+}
+.catering-heading {
+  font-family: "Allura";
+  font-size: 72px;
+  margin-top: 150px;
+  color: #fff;
+  margin-left: 50px;
+}
+
+.catering-actions a:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 1px;
+  width: 100%;
+
+  transform: scaleX(1) !important;
+  left: 0;
+  bottom: -3px;
+  transition: all 0.3s ease-in-out;
+}
+
+.catering-actions:hover a:after {
+  transform: scaleX(0) !important;
+}
+.catering-paragraph {
+  height: 30%;
+  overflow-y: scroll;
+  font-size: 18px;
+  color: #fff;
+  margin: 50px;
+}
+.catering-actions {
+  position: relative;
+}
+.catering-actions a {
+  position: absolute;
+  right: 50px;
+  text-decoration: none;
+  color: #fff;
+
+  font-size: 20px;
+}
+.pattern--1 {
+  position: absolute;
+
+  bottom: 0;
+  right: 0;
+
+  z-index: -1;
+  color: #fff;
+}
+
+.contact-form .form-field {
+  position: relative;
+  margin: 32px 0;
+}
+.contact-form .input-text {
+  display: block;
+  width: 100%;
+  height: 36px;
+  border-width: 0 0 2px 0;
+  border-color: #f6f6f6;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  background: transparent;
+}
+.contact-form .input-text:focus {
+  outline: none;
+}
+.contact-form .input-text:focus + .label,
+.contact-form .input-text.not-empty + .label {
+  -webkit-transform: translateY(-24px);
+  transform: translateY(-24px);
+}
+.contact-form .label {
+  position: absolute;
+  left: 20px;
+  bottom: 11px;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  color: #fff;
+  cursor: text;
+  transition: -webkit-transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out;
+  transition: transform 0.2s ease-in-out, -webkit-transform 0.2s ease-in-out;
+}
+.contact-form .submit-btn {
+  background-color: #ca8342;
+
+  color: #fff;
+ 
+  letter-spacing: 2px;
+  font-size: 16px;
+  padding: 8px 16px;
+  border: none;
+  width: 100%;
+  font-weight:600
+  cursor: pointer;
+  transition: all 0.3s;
+}
+.submit-btn:hover {
+  background: #fff;
+  color: #ca8342;
+}
+.catering-form-container {
+  width: 40%;
+
+  margin-left: 100px;
+}
+.catering-heading-2 {
+  font-size: 18px;
+  padding-top: 180px;
+  color: #fff;
+  width: 40%;
+  margin-left: 100px;
+}
+.contact-form {
+  height: 500px;
+  overflow-y: auto;
+}
+/* *********************************************************************************************** */
+/* gallery */
+.gallery {
+    height:100vh;
+    position: relative;
+  }
+  .gallery-background {
+    display: flex;
+    justify-content: center;
+    width: 100vw !important;
+    height: 100vh !important;
+    object-fit: cover !important;
+  }
+.gallery-content-container {
+    height: 100vh;
+    width: 670px;
+    background:#aa7474;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .tab-nav-bar--gallery{
+
+    width:70%;
+    margin:0 auto;
+    margin-top:170px;
+  }
+  .gallery-tab-content{
+    margin:0 auto;
+  }
+.gallery-tab{
+    margin:0 auto;
+ 
+}
+.gallery-1{
+    
+    width:80%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+   
+    gap:10px;
+    overflow-y:auto;
+    height:450px;
+}
+.gallery-1 img{
+   max-width:100%;
+ 
+}
+.gallery-img-box{
+   
+    position:relative;
+}
+.gallery-search-icon{
+    position:absolute;
+    height:50px;
+    width:50px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    color:#fff;
+ z-index:9999;
+ opacity:0;
+ transition:all .3s ;
+
+}
+.gallery-img-box:hover .gallery-search-icon{
+    opacity:1;
+    cursor:pointer;
+
+}
+
+.gallery-img-box:before{
+    position:absolute;
+    content:"";
+    height:100px;
+    width:100px;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    background: rgba(43, 43, 43, 0.7);
+    opacity:0;
+ transition:all .3s ;
+ }
+ .gallery-img-box:hover:before{
+    opacity:1;
+    cursor:pointer;
+ 
+ }
+
+.btn-gallery{
+    color:#ffffffb3
+}
+.tab-menu.tab-menu-gallery{
+   border-bottom: 2px solid  #ffffffb3 !important;
+}
+.tab-btn.btn-gallery.active{
+    color:#fff;
+}
+
+.tab-btn.btn-gallery:hover,
+.tab-btn.btn-gallery.active {
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+}
+
+.tab-btn.btn-gallery:after,
+.tab-btn.btn-gallery.active:after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  height: 2px;
+  width: 100%;
+  transform: scaleX(0);
+  left: 0;
+  bottom: -21px;
+  transition: all 0.3s ease-in-out;
+}
+.tab-btn:hover:after {
+  transform: scaleX(1);
+}
+.full-img{
+    position:absolute;
+    left:0;
+    top:0;
+    height:100vh;
+    width:60vw;
+    display:none;
+}
+.full-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.pattern--3 {
+    position: absolute;
+  
+    bottom: 0;
+    left: 0;
+    width: 670px;
+    z-index: -1;
+    color: #fff;
+  }
+  .gallery-close-icon{
+    display:none;
+  }
+/* *********************************************************************************************** */
+/* Contact */
+.contact {
+    height: 100vh;
+    background-image: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/contact-us.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+  }
+  
+  .contact {
+    position: relative;
+  }
+  
+  .contact-content-container {
+    height: 100vh;
+    width: 550px;
+    background: #005470;
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 10;
+  }
+  .contact-form-container {
+    width: 40%;
+  
+    margin-left: 100px;
+  }
+  .contact-heading {
+    font-family: "Allura";
+    font-size: 72px;
+    margin-top: 150px;
+    color: #fff;
+    margin-left: 50px;
+  }
+  
+  .contact-actions a:after {
+    content: "";
+    position: absolute;
+    background: #fff;
+    height: 1px;
+    width: 100%;
+  
+    transform: scaleX(1) !important;
+    left: 0;
+    bottom: -3px;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .contact-actions:hover a:after {
+    transform: scaleX(0) !important;
+  }
+  .contact-paragraph {
+  
+    font-size: 18px;
+    color: #fff;
+    margin: 25px;
+  }
+  .contact-info{
+    margin: 25px;
+    color:#fff;
+  }
+  .contact-info span {
+  
+    color:#ca8342;
+  }
+  .join{
+    margin: 25px;
+    color:#fff;
+  }
+  .upload-cv{
+    font-style:italic;
+    color:#ca8342;
+    margin: 25px;
+  }
+  .contact-actions {
+    position: relative;
+  }
+  .contact-actions a {
+    position: absolute;
+    right: 50px;
+    text-decoration: none;
+    color: #fff;
+  
+    font-size: 20px;
+  }
+  .contact-actions button{
+    background:#ca8342;
+    padding:10px 50px;
+    color:#fff;
+    outline:no;ne;
+    border:none;
+    margin-left:25px;
+    margin-top:10px;
+    transition:all .3s
+  }
+  .contact-actions button:hover{
+    color:#000;
+    background:#fff;
+  }
+
+.contact-heading-2 {
+    font-family: "Allura";
+    font-size: 64px;
+    padding-top: 180px;
+    color: #fff;
+    width: 40%;
+    margin-left: 100px;
+  }
+  .contact-form-2 {
+    height: 400px;
+    overflow-y: auto;
+  }
+  .label-select{
+    padding-bottom:20px;
+  }
+  .select {
+    color:#ca8342 !important;
+    -webkit-appearance:none !important;
+   
+  }
+/* ************************************************************************************************ */
+/* footer */
+.footer {
+  
+    background: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/mobile-background.jpg") !important;
+    background-position: center center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 10;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+  }
+  .footer-heading{
+    margin-top:200px;
+    margin-bottom:50px;
+    text-align:center;
+    font-size:36px;
+    color:#5b6670;
+    width:50%;
+  }
+  .footer-order-btn{
+    border:none;
+    outline:none;
+    background:#ca8342;
+    color:#fff;
+    padding:16px 86px;
+    font-size:24px;
+    transition:all .3s;
+    margin-bottom:50px;
+  }
+  .footer-order-btn:hover{
+    background:#5b6670;
+    cursor:pointer;
+  }
+  .or{
+    font-size:36px;
+    color:#5b6670;
+  }
+  .download-app{
+    font-family: "Allura";
+    font-weight:500;
+    font-size:72px;
+    color:#5b6670;
+    margin-bottom:50px;
+  }
+  .download-options{
+    display:flex;
+    gap:60px;
+    margin-bottom:100px;
+  }
+ .footer-social-media{
+    display:flex;
+    gap:40px;
+    margin-bottom:40px;
+ }
+  .footer-social-media a .icon {
+    height:50px;
+    width:50px;
+    color:#000;
+  }
+  .footer-copyright{
+    font-size:12px;
+    color:#5b6670;
+    font-weight:light;
+    margin-bottom:25px;
+
+  }
+  .background-img--1{
+    position:absolute;
+    bottom:80px;
+    left:40px;
+  }
+  .background-img--2{
+    height:380px;
+    position:absolute;
+    bottom:-25px;
+   right:40px;
+  }
+  .background-img--3{
+    position:absolute;
+    top:200px;
+    right:50px;
+   
+  }
+/* *********************************************************************************************** */
 .header {
   position: fixed;
   padding: 40px 0;
@@ -576,6 +1337,9 @@ body {
 
 .main-nav-link.underlinez:hover:after {
   transform: scaleX(1);
+}
+.list-mobile {
+  list-style: none;
 }
 
 @media only screen and (max-width: 1470px) {
@@ -748,9 +1512,7 @@ body {
     padding-top: 50px;
     margin-top: 0;
   }
-  .main-nav-link.actions.mobile {
-    display: none;
-  }
+
   .image-container {
     display: none;
   }
@@ -759,14 +1521,206 @@ body {
   }
   .hidden,
   .hidden-1,
-  .hidden-2 {
+  .hidden-2,
+  .hidden-3,
+  .hidden-4 {
     transition: none !important;
   }
   .features-container {
     top: 42%;
     transform: scale(0.9);
   }
+  .main-nav-link.actions.mobile {
+    display: none;
+  }
+
+  .locations-list {
+    grid-template-columns: 1fr;
+  }
+  .location-card {
+    display: block;
+    max-width: 100%;
+
+    height: 900px;
+  }
+  .location-text-box {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .loaction-img-box {
+    height: 80%;
+  }
+  .loaction-img-box img {
+    width: 100%;
+    height: 100%;
+  }
+  .loaction-menu {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .location-container {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+  }
+
+  .catering-content-container{
+    position:absolute;
+  width:100%;
+height:60vh;
+  
+  }
+  .catering-heading{
+    margin-top:180px;
+    font-size:48px;
+  }
+  .catering-paragraph{
+    font-size:14px;
+    height:auto;
+    overflow-y:hidden;
+    margin:20px;
+  }
+  .catering-form-container{
+   
+    width:80%;
+  }
+  .contact-form{
+    height:auto;
+    overflow-y:hidden;
+    
+  }
+  .catering-heading-2{
+    width:70%;
+    padding-top:550px;
+  }
+ .contact {
+    height:auto;
+ }
+.contact-content-container{
+    position:static;
+    width:100%;
+    height:auto;
+    padding-bottom:50px;
 }
+.contact-heading-2 {
+    padding-top:50px;
+    font-size:48px;
+    text-align:center;
+
+}
+.contact-heading{
+    margin-top:50px;
+}
+.contact-form-container{
+    margin:0 auto;
+    width:80%;
+}
+.background-img--3{
+  position:static;
+  margin-top:30px;
+}
+.background-img--2{
+    position:static;
+  }
+  .background-img--1{
+    position:static;
+  }
+.footer-heading{
+    margin-top:50px;
+    width:90%;
+    font-size:26px;
+}
+.or{
+    font-size:20px;
+}
+.download-app{
+    font-size:56px;
+    margin-bottom:20px;
+}
+.download-options{
+    margin-bottom:50px;
+}
+.download-options a img{
+    height:70px;
+}
+.footer-copyright{
+    text-align:center;
+    padding:10px;
+}
+.gallery-content-container{
+    width:100%;
+}
+.btn-gallery{
+    margin:0;
+}
+.tab-menu-gallery{
+   display:flex;
+   gap:20px;
+   padding-left:0;
+}
+.tab-navigation{
+    display:flex;
+    justify-content:center;
+}
+.full-img{
+    width:100%;
+    height:100vh;
+    background:rgba(0,0,0,.9);
+    position:fixed;
+    top:0;
+    left:0;
+   display:none;
+   z-index:99999;
+   
+}
+.full-img img{
+    width:90%;
+    height:auto;
+    max-width:500px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.gallery-close-icon{
+    display:block;
+    position:absolute;
+    color:#fff;
+    top:1.5%;
+    right:5%;
+    font-size:40px;
+    cursor:pointer;
+  }
+  .prev{
+    text-decoration:none;
+    color:#fff;
+   font-size:30px;
+    position:absolute;
+    top:46.5%;
+    transform:translateX(-50%);
+    left:30px;
+    cursor:pointer;
+  }
+  .next{
+    text-decoration:none;
+    color:#fff;
+   font-size:30px;
+    position:absolute;
+    top:46.5%;
+    transform:translateX(-50%);
+    right:20px;
+    cursor:pointer;
+  }
+ 
+
+}
+
 @media only screen and (max-width: 770px) {
   .features-container {
     top: 16%;
@@ -779,6 +1733,14 @@ body {
 
   .features-card {
     height: 175px;
+  }
+  .catering-form-container{
+   
+    width:70%;
+  }
+  .catering-heading-2{
+    width:80%;
+  
   }
 }
 
@@ -821,16 +1783,18 @@ body {
 
   .features-card {
     height: 160px;
-    font-size: ;
+    min-width:350px;
+  
+   
   }
   .features-card {
     height: 150px;
   }
   .feature-title {
-    font-size: 16px;
+    font-size: 14px;
   }
   .feature-text {
-    font-size: 14px;
+    font-size: 12px;
   }
 
   .feature-image-container {
@@ -839,6 +1803,76 @@ body {
   .feature-image-container img {
     height: 150px;
   }
+  .catering-heading{
+    margin-top:50px;
+  }
+  .catering-content-container{
+    height:60vh;
+  }
+  .catering-form-container{
+   
+    margin:0 auto;
+  }
+  .catering-heading-2{
+    text-align:center;
+    padding-top:450px;
+    margin:0 auto;
+  }
+  .menu-heading{
+    padding-top:50px;
+  }
+  .contact-heading-2 {
+      margin:0 auto ;
+    
+    font-size:32px;
+ 
+
+}
+.download-app{
+    font-size:36px;
+ 
+}
+.download-options{
+    flex-direction:column;
+    gap:30px;
+}
+.btn-gallery{
+    font-size:11px;
+}
+.gallery-1{
+    
+    width:90%;
+    margin:0 auto;
+    display:grid;
+    grid-template-columns: repeat(2, 1fr);
+   
+    gap:10px;
+    overflow-y:auto;
+    height:800px;
+}
+.gallery-1 img{
+  width:100%;
+ 
+}
+.location-heading{
+    padding-top:50px;
+}
+.location-text{
+    width:80%;
+    margin-bottom:30px;
+}
+.loaction-img-box{
+    height:30vh;
+}
+.location-card{
+    height:auto;
+}
+.locations{
+    margin-bottom:50px;
+}
+.menu-items-container ul {
+    margin-left:25px;
+}
 }
 @media only screen and (max-width: 425px) {
   .restaurant-content-container {
@@ -850,6 +1884,10 @@ body {
   }
   .copyright {
     font-size: 8px;
+  }
+  .catering-form-container{
+   
+    width:60%;
   }
 }
 
@@ -905,6 +1943,36 @@ body {
   opacity: 1;
   transform: translateX(0);
 }
+
+.hidden-3 {
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateY(-100%);
+
+  transition: all 1.5s ease-in-out;
+}
+
+.show-3 {
+  filter: blur(0px);
+
+  opacity: 1;
+  transform: translateY(0);
+}
+.hidden-4 {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY( 100%);
+  
+    transition: all 1.5s;
+    transition-delay: 1.5s;
+  }
+  
+  .show-4 {
+    filter: blur(0px);
+    opacity: 1;
+    transform: translateY(0);
+  }
+
 
 .item:nth-child(2) {
   transition-delay: 200ms;
@@ -965,4 +2033,16 @@ body {
 }
 .item:nth-child(20) {
   transition-delay: 3800ms;
+}
+.animation:nth-child(2) {
+  transition-delay: 1000ms;
+}
+.animation:nth-child(3) {
+  transition-delay: 2000ms;
+}
+.animation:nth-child(4) {
+  transition-delay: 3000ms;
+}
+.animation:nth-child(5) {
+  transition-delay: 4000ms;
 }

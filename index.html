@@ -15,6 +15,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./lightbox.css">
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
@@ -30,7 +31,7 @@
         ><img
           src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/logo-white.svg"
           alt=""
-          class="nav-logo"
+          class="nav-logo logo-light"
       /></a>
       <a href="#"
         ><img
@@ -56,16 +57,18 @@
             <a class="main-nav-link underlinez" href="#menu"> Menu & Sweets </a>
           </li>
           <li>
-            <a class="main-nav-link underlinez" href="#"> Locations </a>
+            <a class="main-nav-link underlinez" href="#locations">
+              Locations
+            </a>
           </li>
           <li>
-            <a class="main-nav-link underlinez" href="#"> Catering </a>
+            <a class="main-nav-link underlinez" href="#catering"> Catering </a>
           </li>
           <li>
-            <a class="main-nav-link underlinez" href="#"> Gallery </a>
+            <a class="main-nav-link underlinez" href="#gallery"> Gallery </a>
           </li>
           <li>
-            <a class="main-nav-link underlinez" href="#"> Contact Us </a>
+            <a class="main-nav-link underlinez" href="#contact"> Contact Us </a>
           </li>
           <li>
             <a class="main-nav-link actions reserve" href="#">
@@ -127,7 +130,7 @@
             </span>
           </a>
         </div>
-        <ul>
+        <ul class="list-mobile">
           <li>
             <a class="main-nav-link actions mobile" href="#">
               Reserve a Table
@@ -232,7 +235,7 @@
             class="story-background"
           />
         </div>
-        <div class="story-content-container hidden-2">
+        <div class="story-content-container hidden">
           <h2 class="story-heading">Our Story</h2>
 
           <p class="story-paragraph">
@@ -272,20 +275,20 @@
           <div class="tab-nav-bar">
             <div class="tab-navigation">
               <ul class="tab-menu">
-                <li class="tab-btn active">BREAKFAST</li>
-                <li class="tab-btn">DAILY DISH</li>
-                <li class="tab-btn">SOUP</li>
-                <li class="tab-btn">COLD STARTERS</li>
-                <li class="tab-btn">RAW MEAT</li>
-                <li class="tab-btn">HOT STARTERS</li>
-                <li class="tab-btn">PASTRY</li>
-                <li class="tab-btn">LEBANESE GRILLS</li>
-                <li class="tab-btn">SEAFOOD</li>
-                <li class="tab-btn">SANDWICHES</li>
-                <li class="tab-btn">INTL. DISHES</li>
-                <li class="tab-btn">JUICES</li>
-                <li class="tab-btn">SALADS</li>
-                <li class="tab-btn">SWEETS</li>
+                <li class="tab-btn active hidden-3">BREAKFAST</li>
+                <li class="tab-btn item hidden-3">DAILY DISH</li>
+                <li class="tab-btn item hidden-3">SOUP</li>
+                <li class="tab-btn item hidden-3">COLD STARTERS</li>
+                <li class="tab-btn item hidden-3">RAW MEAT</li>
+                <li class="tab-btn item hidden-3">HOT STARTERS</li>
+                <li class="tab-btn item hidden-3">PASTRY</li>
+                <li class="tab-btn item hidden-3">LEBANESE GRILLS</li>
+                <li class="tab-btn item hidden-3">SEAFOOD</li>
+                <li class="tab-btn item hidden-3">SANDWICHES</li>
+                <li class="tab-btn item hidden-3">INTL. DISHES</li>
+                <li class="tab-btn item hidden-3">JUICES</li>
+                <li class="tab-btn item hidden-3">SALADS</li>
+                <li class="tab-btn item hidden-3">SWEETS</li>
               </ul>
             </div>
           </div>
@@ -1762,16 +1765,1771 @@
         </div>
       </section>
       <!-- -------------------------------------------------------------------------------------------------------- -->
-      <!-- <div class="test hidden">
-        <p class="slide hidden">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati
-          tempore est dolor nisi minus ex quaerat, sint ipsum accusamus, ea
-          alias quis temporibus quae laudantium sunt? Quam asperiores nesciunt
-          consequatur.
+      <section class="locations" id="locations">
+        <h1 class="location-heading hidden-3">Locations</h1>
+        <p class="location-text hidden-2">
+          For your convenience, we are currently open in 4 different locations
+          across Dubai. With many more on the horizon. We look forward to
+          welcoming you to one of our Lebanese Grill Specialties or to our
+          Lebanese Seafood Specialty restaurant in Downtown Dubai.
         </p>
-      </div> -->
+        <div class="location-container">
+          <ul class="locations-list">
+            <li class="location-card animation hidden-2">
+              <div class="loaction-img-box">
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/garhoud.jpg"
+                  alt=""
+                />
+                <span class="loaction-menu"
+                  >Menu
+                  <span class="menu-icon"
+                    ><ion-icon name="book-outline"></ion-icon></span
+                ></span>
+              </div>
+              <div class="location-text-box">
+                <div class="location-name">Al Hallab - Garhoud</div>
+                <div class="location-address">
+                  Sheikh Rashid Rd, Dubai U.A.E
+                </div>
+                <div class="location-phone">
+                  <span><ion-icon name="call-outline"></ion-icon></span>+971 (0)
+                  4 2823388
+                </div>
+                <div class="location-time">
+                  <span><ion-icon name="time-outline"></ion-icon></span>11:00 AM
+                  - 00:00 AM
+                </div>
+              </div>
+              <div class="indicator-container">
+                <svg
+                  class="list-svg-1"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1200"
+                  height="240"
+                  viewBox="0 0 1500 240"
+                >
+                  <path
+                    class="path-1-1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#005470"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                  <path
+                    class="path-1-2"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#fff"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                </svg>
+              </div>
+              <div class="location-point location1"></div>
+              <div class="hallab-logo--1"></div>
+            </li>
+            <li class="location-card animation hidden-2">
+              <div class="loaction-img-box">
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/dubai-mall.jpg"
+                  alt=""
+                />
+                <span class="loaction-menu"
+                  >Menu
+                  <span class="menu-icon"
+                    ><ion-icon name="book-outline"></ion-icon></span
+                ></span>
+              </div>
+              <div class="location-text-box">
+                <div class="location-name">Al Hallab - Dubai Mall</div>
+                <div class="location-address">
+                  Near the Waterfall, Level 2, Dubai Mall
+                </div>
+                <div class="location-phone">
+                  <span><ion-icon name="call-outline"></ion-icon></span>+971 (0)
+                  4 3308828
+                </div>
+                <div class="location-time">
+                  <span><ion-icon name="time-outline"></ion-icon></span>11:00 AM
+                  - 00:00 AM
+                </div>
+              </div>
+              <div class="indicator-container">
+                <svg
+                  class="list-svg-2"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="950"
+                  height="240"
+                  viewBox="0 0 1500 240"
+                >
+                  <path
+                    class="path-1-1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#005470"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                  <path
+                    class="path-1-2"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#fff"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                </svg>
+              </div>
+              <div class="location-point location2"></div>
+              <div class="hallab-logo--2"></div>
+            </li>
+            <li class="location-card animation hidden-2">
+              <div class="loaction-img-box">
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/mall-of-emirates.jpg"
+                  alt=""
+                />
+                <span class="loaction-menu"
+                  >Menu
+                  <span class="menu-icon"
+                    ><ion-icon name="book-outline"></ion-icon></span
+                ></span>
+              </div>
+              <div class="location-text-box">
+                <div class="location-name">Al Hallab - Mall of Emirates</div>
+                <div class="location-address">
+                  1st Floor Mall of The Emirates, Near Ski Dubai
+                </div>
+                <div class="location-phone">
+                  <span><ion-icon name="call-outline"></ion-icon></span>+971 (0)
+                  4 3411880
+                </div>
+                <div class="location-time">
+                  <span><ion-icon name="time-outline"></ion-icon></span>11:00 AM
+                  - 00:00 AM
+                </div>
+              </div>
+              <div class="indicator-container">
+                <svg
+                  class="list-svg-3"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1200"
+                  height="240"
+                  viewBox="0 0 1500 240"
+                >
+                  <path
+                    class="path-1-1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#005470"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                  <path
+                    class="path-1-2"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#fff"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                </svg>
+              </div>
+              <div class="location-point location3"></div>
+              <div class="hallab-logo--3"></div>
+            </li>
+            <li class="location-card animation hidden-2">
+              <div class="loaction-img-box">
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/bab-el-bahr.jpg"
+                  alt=""
+                />
+                <span class="loaction-menu"
+                  >Menu
+                  <span class="menu-icon"
+                    ><ion-icon name="book-outline"></ion-icon></span
+                ></span>
+              </div>
+              <div class="location-text-box">
+                <div class="location-name">Bab El Bahr - Downtown Dubai</div>
+                <div class="location-address">
+                  Boulevard 29 Bld. Moh’d Bin. Rashed Blvd.
+                </div>
+                <div class="location-phone">
+                  <span><ion-icon name="call-outline"></ion-icon></span>+971 (0)
+                  4 4562881
+                </div>
+                <div class="location-time">
+                  <span><ion-icon name="time-outline"></ion-icon></span>11:00 AM
+                  - 01:00 AM
+                </div>
+              </div>
+              <div class="indicator-container">
+                <svg
+                  class="list-svg-4"
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="1000"
+                  height="240"
+                  viewBox="0 0 1500 240"
+                >
+                  <path
+                    class="path-1-1"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#005470"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                  <path
+                    class="path-1-2"
+                    fill="none"
+                    fill-rule="evenodd"
+                    stroke="#fff"
+                    stroke-linecap="square"
+                    stroke-width="2"
+                    d="M1,239h1498l-0.2-238"
+                  ></path>
+                </svg>
+              </div>
+              <div class="location-point location4"></div>
+              <div class="hallab-logo--4"></div>
+            </li>
+          </ul>
+        </div>
+        <div class="map-container">
+          <img
+            src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/map.jpg"
+            alt=""
+          />
+        </div>
+        <div
+          class="location-map-container-main"
+          style="width: 0px; height: 0px"
+        >
+          <div
+            class="location-line-container location-line-container1 inactive"
+          >
+            <div class="location-point location1"></div>
+            <svg
+              class="list-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1200"
+              height="240"
+              viewBox="0 0 1500 240"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1,239h1498l-0.2-238"
+              ></path>
+              <path
+                class="path2"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#fff"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1,239h1498l-0.2-238"
+              ></path>
+            </svg>
+            <!-- <svg
+              class="point-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="1500"
+              height="240"
+              viewBox="0 0 1500 240"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="red"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1498.9,1l0.1,238H1"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1498.9,2l0.1,237H1"
+              ></path>
+            </svg> -->
+          </div>
+          <!-- <div
+            class="location-line-container location-line-container2 inactive"
+          >
+            <div class="location-point location2"></div>
+            <svg
+              class="list-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="735"
+              height="142"
+              viewBox="0 0 735 142"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1 141h733l-.128-140"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1 141h733l-.128-140"
+              ></path>
+            </svg>
+            <svg
+              class="point-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="735"
+              height="142"
+              viewBox="0 0 735 142"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M734 1v140H1"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M734 1v140H1"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="location-line-container location-line-container3 inactive"
+          >
+            <div class="location-point location3"></div>
+            <svg
+              class="list-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="700"
+              height="36"
+              viewBox="0 0 700 36"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1,1h698v33.4"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1,1h698v33.4"
+              ></path>
+            </svg>
+            <svg
+              class="point-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="700"
+              height="36"
+              viewBox="0 0 700 36"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M700,34.4V1H1"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M700,34.4V1H1"
+              ></path>
+            </svg>
+          </div>
+          <div
+            class="location-line-container location-line-container4 inactive"
+          >
+            <div class="location-point location4"></div>
+            <svg
+              class="list-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="677"
+              height="218.9"
+              viewBox="0 0 677 218.9"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1,217.9h675l-0.1-216"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M1,217.9h675l-0.1-216"
+              ></path>
+            </svg>
+            <svg
+              class="point-svg"
+              xmlns="http://www.w3.org/2000/svg"
+              width="677"
+              height="218.3"
+              viewBox="0 0 677 218.3"
+            >
+              <path
+                class="path"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#005470"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M676,1.3v216H1"
+              ></path>
+              <path
+                class="dashed"
+                fill="none"
+                fill-rule="evenodd"
+                stroke="#ffffff"
+                stroke-dasharray="5"
+                stroke-linecap="square"
+                stroke-width="2"
+                d="M676,1.3v216H1"
+              ></path>
+            </svg>
+          </div>
+          -->
+        </div>
+        <div class="location-img1">
+          <img
+            src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/burj-khalifa.svg"
+            alt="Burj Khalifa"
+          />
+        </div>
+        <div class="location-img2">
+          <img
+            src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/location2.svg"
+            alt="Location 2"
+          />
+        </div>
+      </section>
+      <!-- ------------------------------------------------------------------------------------------------------- -->
+      <section class="catering" id="catering">
+        <div class="catering-container">
+          <h2 class="catering-heading-2 hidden-2">
+            We would be honored to discuss your event or occasion further.
+            Please fill the form below:
+          </h2>
+          <div class="catering-form-container">
+            <form class="contact-form row">
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="name"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="name">First Name*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="lastName"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="lastName">Last Name*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="email"
+                  class="input-text js-input"
+                  type="email"
+                  required
+                />
+                <label class="label" for="email">Contact Email*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="phone"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="phone">Contact No.*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="date"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="date">Date of Event*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="persons"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="persons">No. of Persons*</label>
+              </div>
+              <div class="form-field col-lg-12 item hidden-2">
+                <input
+                  id="event"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="event">Event Description*</label>
+              </div>
+              <div class="form-field col-lg-12 item hidden-2">
+                <input
+                  id="instructions"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="instructions"
+                  >Special Instructions*</label
+                >
+              </div>
+              <div class="form-field col-lg-12">
+                <input
+                  class="submit-btn"
+                  type="submit"
+                  value="Submit Request"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="catering-content-container hidden">
+          <h2 class="catering-heading">Catering</h2>
+
+          <p class="catering-paragraph">
+            Traditionally in Lebanon, food is an expression of love. It is what
+            brings us together to comfort, to socialize and to celebrate. And it
+            is this tradition that we hold dearly in our hearts when we cater
+            for you. Therefore, our team of experts are here to ensure your
+            every event or occasion is both personalized, with a 5 star
+            experience, so you too can truly comfort, socialize or celebrate
+            over an authentic Lebanese feast.
+          </p>
+          <div class="catering-actions">
+            <a
+              href="https://alhallabrestaurant.com/wp-content/uploads/2023/07/Al-Hallab-Catering-Services-2023.pdf"
+              >Download Menu</a
+            >
+          </div>
+          <div class="pattern--1"><img src="./imgs/pattern1.png" alt="" /></div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------------------------------------- -->
+      <section class="gallery" id="gallery">
+        <div>
+          <img
+            src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/gallery.jpg"
+            alt=""
+            class="gallery-background"
+          />
+        
+        </div>
+        <div class="full-img" id="fullImgBox">
+          <img
+            src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/100.%20Shrimp%20pane-230x145.jpg"
+            id="fullImg"
+          />
+          <span class="gallery-close-icon" onclick="closeFullImg()"><ion-icon  name="close-outline"></ion-icon></span>
+          <a class="prev" id="prevButton">&#10094;</a>
+          <a class="next" id="nextButton">&#10095;</a>
+        </div>
+        <div class="gallery-content-container hidden">
+          <div class="main-container">
+            <div class="tab-nav-bar tab-nav-bar--gallery">
+              <div class="tab-navigation">
+                <ul class="tab-menu tab-menu-gallery">
+                  <li class="tab-btn btn-gallery btn1 active">FOOD</li>
+                  <li class="tab-btn btn-gallery btn2">SWEETS</li>
+                  <li class="tab-btn btn-gallery btn3">RESTAURANT</li>
+                  <li class="tab-btn btn-gallery btn4">CATERING</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="tab-content gallery-tab-content">
+            <div class="tab active gallery-tab">
+              <div class="gallery-1 gallery--1" >
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/1.jpg')"
+                >
+                  <img
+                    class="gallery-img"
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/100.%20Shrimp%20pane-230x145.jpg"
+                    onclick="openFullImg(this.src)"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/2.jpg')"
+                >
+                  <img
+                    class="gallery-img"
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Grilled%20Hammor-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/3.jpg')"
+                >
+                  <img
+                    class="gallery-img"
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Chicken%20Wings-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/4.jpg')"
+                >
+                  <img
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Arayes-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/5.jpg')"
+                >
+                  <img
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Mixed%20Grill%20with%20Lamb%20Meat-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/6.jpg')"
+                >
+                  <img
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Meat%20Kebbe-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                class="gallery-img-box"
+                onclick="openFullImg('./imgs/gallery-1/1.jpg')"
+              >
+                <img
+                  class="gallery-img"
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/100.%20Shrimp%20pane-230x145.jpg"
+                  onclick="openFullImg(this.src)"
+                />
+                <ion-icon
+                  class="gallery-search-icon"
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+              <div
+                class="gallery-img-box"
+                onclick="openFullImg('./imgs/gallery-1/2.jpg')"
+              >
+                <img
+                  class="gallery-img"
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Grilled%20Hammor-230x145.jpg"
+                />
+                <ion-icon
+                  class="gallery-search-icon"
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+              <div
+                class="gallery-img-box"
+                onclick="openFullImg('./imgs/gallery-1/3.jpg')"
+              >
+                <img
+                  class="gallery-img"
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Chicken%20Wings-230x145.jpg"
+                />
+                <ion-icon
+                  class="gallery-search-icon"
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+              <div
+                class="gallery-img-box"
+                onclick="openFullImg('./imgs/gallery-1/4.jpg')"
+              >
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Arayes-230x145.jpg"
+                />
+                <ion-icon
+                  class="gallery-search-icon"
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+
+              <div
+                class="gallery-img-box"
+                onclick="openFullImg('./imgs/gallery-1/5.jpg')"
+              >
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Mixed%20Grill%20with%20Lamb%20Meat-230x145.jpg"
+                />
+                <ion-icon
+                  class="gallery-search-icon"
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+              <div
+                class="gallery-img-box"
+                onclick="openFullImg('./imgs/gallery-1/6.jpg')"
+              >
+                <img
+                  src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Meat%20Kebbe-230x145.jpg"
+                />
+                <ion-icon
+                  class="gallery-search-icon"
+                  name="search-outline"
+                ></ion-icon>
+              </div>
+              <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/1.jpg')"
+                >
+                  <img
+                    class="gallery-img"
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/100.%20Shrimp%20pane-230x145.jpg"
+                    onclick="openFullImg(this.src)"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/2.jpg')"
+                >
+                  <img
+                    class="gallery-img"
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Grilled%20Hammor-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/3.jpg')"
+                >
+                  <img
+                    class="gallery-img"
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Chicken%20Wings-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/4.jpg')"
+                >
+                  <img
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Arayes-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/5.jpg')"
+                >
+                  <img
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Mixed%20Grill%20with%20Lamb%20Meat-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+                <div
+                  class="gallery-img-box"
+                  onclick="openFullImg('./imgs/gallery-1/6.jpg')"
+                >
+                  <img
+                    src="https://alhallabrestaurant.com/wp-content/uploads/2020/02/Meat%20Kebbe-230x145.jpg"
+                  />
+                  <ion-icon
+                    class="gallery-search-icon"
+                    name="search-outline"
+                  ></ion-icon>
+                </div>
+              </div>
+            
+            </div>
+          </div>
+          <div class="tab-content gallery-tab-content">
+            <div class="tab gallery-tab">  
+              <div class="gallery-1 gallery--2">
+              <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-2/1.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-2/1.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-2/2.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-2/2.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-2/3.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-2/3.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-2/4.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-2/4.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-2/5.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-2/5.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-2/6.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-2/6.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-2/1.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-2/1.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-2/2.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-2/2.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-2/3.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-2/3.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-2/4.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-2/4.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-2/5.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-2/5.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-2/6.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-2/6.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-2/1.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-2/1.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+        <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-2/2.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-2/2.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+        <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-2/3.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-2/3.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+        <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-2/4.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-2/4.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+        <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-2/5.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-2/5.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+        <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-2/6.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-2/6.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+            </div></div>
+          </div>
+          <div class="tab-content gallery-tab-content">
+            <div class="tab gallery-tab"><div class="gallery-1 gallery--3">
+              <div
+              class="gallery-img-box"
+              onclick="openFullImg('./imgs/gallery-3/1.jpg')"
+            >
+              <img
+                class="gallery-img"
+                src="./imgs/gallery-3/1.jpg"
+                onclick="openFullImg(this.src)"
+              />
+              <ion-icon
+                class="gallery-search-icon"
+                name="search-outline"
+              ></ion-icon>
+              
+            </div>
+            <div
+            class="gallery-img-box"
+            onclick="openFullImg('./imgs/gallery-3/2.jpg')"
+          >
+            <img
+              class="gallery-img"
+              src="./imgs/gallery-3/2.jpg"
+              onclick="openFullImg(this.src)"
+            />
+            <ion-icon
+              class="gallery-search-icon"
+              name="search-outline"
+            ></ion-icon>
+            
+          </div>
+          <div
+          class="gallery-img-box"
+          onclick="openFullImg('./imgs/gallery-3/3.jpg')"
+        >
+          <img
+            class="gallery-img"
+            src="./imgs/gallery-3/3.jpg"
+            onclick="openFullImg(this.src)"
+          />
+          <ion-icon
+            class="gallery-search-icon"
+            name="search-outline"
+          ></ion-icon>
+          
+        </div>
+        <div
+        class="gallery-img-box"
+        onclick="openFullImg('./imgs/gallery-3/4.jpg')"
+      >
+        <img
+          class="gallery-img"
+          src="./imgs/gallery-3/4.jpg"
+          onclick="openFullImg(this.src)"
+        />
+        <ion-icon
+          class="gallery-search-icon"
+          name="search-outline"
+        ></ion-icon>
+        
+      </div>
+      <div
+      class="gallery-img-box"
+      onclick="openFullImg('./imgs/gallery-3/5.jpg')"
+    >
+      <img
+        class="gallery-img"
+        src="./imgs/gallery-3/5.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <ion-icon
+        class="gallery-search-icon"
+        name="search-outline"
+      ></ion-icon>
+      
+    </div>
+    <div
+    class="gallery-img-box"
+    onclick="openFullImg('./imgs/gallery-3/6.jpg')"
+  >
+    <img
+      class="gallery-img"
+      src="./imgs/gallery-3/6.jpg"
+      onclick="openFullImg(this.src)"
+    />
+    <ion-icon
+      class="gallery-search-icon"
+      name="search-outline"
+    ></ion-icon>
+    
+  </div>
+  <div
+  class="gallery-img-box"
+  onclick="openFullImg('./imgs/gallery-3/1.jpg')"
+>
+  <img
+    class="gallery-img"
+    src="./imgs/gallery-3/1.jpg"
+    onclick="openFullImg(this.src)"
+  />
+  <ion-icon
+    class="gallery-search-icon"
+    name="search-outline"
+  ></ion-icon>
+  
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/2.jpg')"
+>
+<img
+  class="gallery-img"
+  src="./imgs/gallery-3/2.jpg"
+  onclick="openFullImg(this.src)"
+/>
+<ion-icon
+  class="gallery-search-icon"
+  name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/3.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/3.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/4.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/4.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/5.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/5.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/6.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/6.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/1.jpg')"
+>
+<img
+  class="gallery-img"
+  src="./imgs/gallery-3/1.jpg"
+  onclick="openFullImg(this.src)"
+/>
+<ion-icon
+  class="gallery-search-icon"
+  name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/2.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/2.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/3.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/3.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/4.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/4.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/5.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/5.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+<div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-3/6.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-3/6.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+</div>
+            </div></div>
+          </div>
+          <div class="tab-content gallery-tab-content">
+            <div class="tab gallery-tab">
+              <!-- <div class="gallery-1">
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+                <div
+class="gallery-img-box"
+onclick="openFullImg('./imgs/gallery-4/1.jpg')"
+>
+<img
+class="gallery-img"
+src="./imgs/gallery-4/1.jpg"
+onclick="openFullImg(this.src)"
+/>
+<ion-icon
+class="gallery-search-icon"
+name="search-outline"
+></ion-icon>
+
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="pattern--3"><img src="./imgs/pattern3.png" alt="" /></div>
+        </div>
+      </section>
+
+      <!-- -------------------------------------------------------------------------------------------------------- -->
+      <section class="contact" id="contact">
+        <div class="contact-container">
+          <h2 class="contact-heading-2 hidden-2">Fill The Form</h2>
+          <div class="contact-form-container">
+            <form class="contact-form contact-form-2 row">
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="name-1"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="name-1">First Name*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="lastName"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="lastName">Last Name*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="email-1"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="email-1">Contact Email*</label>
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <input
+                  id="phone-1"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="phone-1">Contact No.*</label>
+              </div>
+              <div class="form-field col-lg-6 select item hidden-2">
+                <select
+                  class="input-text select js-input"
+                  name="inquiries"
+                  id="inquiry-select"
+                >
+                  <option value="" class="select-option">
+                    --Please choose an option--
+                  </option>
+                  <option value="booking">Booking</option>
+                  <option value="general">General</option>
+                  <option value="enquiry">Enquiry</option>
+                  <option value="complaints">Complaints</option>
+                </select>
+                <label class="label label-select" for="inquiry-select""
+                  >Type of Inquiry*</label
+                >
+              </div>
+              <div class="form-field col-lg-6 item hidden-2">
+                <select
+                  class="input-text select js-input"
+                  name="inquiries"
+                  id="restaurant"
+                >
+                  <option value="" class="select-option">
+                    --Please choose an option--
+                  </option>
+                  <option value="Al Hallab - Garhoud">
+                    Al Hallab - Garhoud
+                  </option>
+                  <option value="Al Hallab - Dubai Mall">Al Hallab - Dubai Mall</option>
+                  <option value="Al Hallab - Mall of Emirates">Al Hallab - Mall of Emirates</option>
+                  <option value="Bab El Bahr - Downtown Dubai">Bab El Bahr - Downtown Dubai</option>
+                </select>
+                <label class="label label-select" for="restaurant"
+                  >Restaurant*</label
+                >
+              </div>
+              <div class="form-field col-lg-12 item hidden-2">
+                <input
+                  id="message-1"
+                  class="input-text js-input"
+                  type="text"
+                  required
+                />
+                <label class="label" for="message-1">Message*</label>
+              </div>
+
+              <div class="form-field col-lg-12">
+                <input
+                  class="submit-btn"
+                  type="submit"
+                  value="Submit Request"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="contact-content-container hidden">
+          <h2 class="contact-heading">get in touch</h2>
+
+          <p class="contact-paragraph">
+            Good conversation is the next best thing to great Lebanese food. And
+            we would like to start one with you. Please call us or email us.
+          </p>
+          <div class="contact-info">
+            <p class="hidden">Garhoud: <span> 04 282 3388</span></p>
+            <p class=" item hidden">The Dubai Mall: <span> 04 330 8828</span></p>
+            <p class="item hidden">Mall of The Emirates: <span>04 341 1880</span></p>
+            <p class="item hidden">Bab El Bahr - Downtown Dubai: <span> 04 456 2881</span></p>
+          </div>
+          <p class="join">
+            Would you like to join Al Hallab Family? Upload your Resume now:
+          </p>
+          <span class="upload-cv">Click to Attach Resume</span>
+          <div class="contact-actions">
+            <button>Submit</button>
+          </div>
+          <div class="pattern--1"><img src="./imgs/pattern1.png" alt="" /></div>
+        </div>
+      </section>
+      <!-- -------------------------------------------------------------------------------------------------------- -->
+<footer class="footer" id="footer">
+  <img class="background-img--3 hidden" src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/footer-background1.png" alt="">
+  
+  <h1 class="footer-heading hidden-4">ENJOY AUTHENTIC LEBANESE FOOD AND SWEETS IN THE COMFORT OF YOUR HOME</h1>
+  <button class="footer-order-btn hidden-4">Order Via Web</button>
+  <div class="or hidden-4">OR</div>
+  <div class="download-app hidden-4">Download Our App</div>
+  <img class="background-img--2 hidden" src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/alhallab_mobile_app_image_331x581.png" alt="">
+  <div class="download-options">
+    <a href="https://order.radyes.co/alhallab_restaurant"><img src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/google-play.png" alt=""></a>
+    <a href="https://order.radyes.co/alhallab_restaurant" ><img src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/app-store.png" alt=""></a>
+  </div>
+  <img class="background-img--1 hidden-2" src="https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/dish2.png" alt="">
+  <div class="footer-social-media">
+    <a href="https://www.facebook.com/AlHallabUAE/"><ion-icon class="icon" name="logo-facebook"></ion-icon></a>
+    <a href="https://www.instagram.com/alhallabuae/?hl=en"><ion-icon class="icon" name="logo-instagram"></ion-icon></a>
+    <a href="https://www.youtube.com/channel/UCTqWXdTtpaHXNu_YiiWwhfA/videos"><ion-icon class="icon" name="logo-youtube"></ion-icon></a>
+  </div>
+  <div class="footer-copyright">Copyright © 2020 Al Hallab Restaurant & Sweets Ghassan Al Hallab & Partners LLC</div>
+  
+  
+ 
+</footer>
       <!-- --------------------------------------------------------------------------------------------------- -->
     </main>
+    <script src="./lightbox-plus-jquery.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script
       type="module"
