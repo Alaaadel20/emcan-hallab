@@ -417,7 +417,7 @@ body {
 /* ************************************************************************************************ */
 /* LOCATIONS */
 .locations {
-
+height:100vh;
   position: relative;
 }
 .location-heading {
@@ -675,7 +675,7 @@ body {
 /* ************************************************************************************************ */
 /* CATERING */
 .catering {
-
+height:100vh;
   background-image: url("https://alhallabrestaurant.com/wp-content/themes/twentytwenty-child/htmls/assets/images/catering-bg.jpg");
   background-position: center center;
   background-repeat: no-repeat;
@@ -816,8 +816,9 @@ body {
   margin-left: 100px;
 }
 .contact-form {
-  height: 500px;
+  height: 400px;
   overflow-y: auto;
+
 }
 /* *********************************************************************************************** */
 /* gallery */
@@ -1476,6 +1477,13 @@ body {
 }
 
 @media only screen and (max-width: 990px) {
+    .locations {
+        height:auto;
+          
+        }
+        .catering {
+            height:auto;
+        }
   .hero {
     height: 120vh;
   }
