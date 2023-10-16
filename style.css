@@ -1411,9 +1411,11 @@ body {
   }
   .nav-open .main-nav-link.actions.reserve {
     font-size:18px;
+    border:none;
   }
   .nav-open .main-nav-link.actions.order {
   font-size:18px;
+  border:none;
   }
   .nav-open .number,
   .nav-open .number-details {
