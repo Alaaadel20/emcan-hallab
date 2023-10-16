@@ -257,7 +257,7 @@ body {
 .story-heading {
   font-family: "Allura";
   font-size: 72px;
-  margin-top: 150px;
+  margin-top: 200px;
   color: #fff;
   margin-left: 50px;
 }
@@ -426,7 +426,7 @@ body {
   font-size: 64px;
   font-weight: 800px;
   color: #5b6670;
-  padding-top: 150px;
+  padding-top: 200px;
 }
 .location-text {
   margin-left: 40px;
@@ -700,7 +700,7 @@ body {
 .catering-heading {
   font-family: "Allura";
   font-size: 72px;
-  margin-top: 150px;
+  margin-top: 200px;
   color: #fff;
   margin-left: 50px;
 }
@@ -810,7 +810,7 @@ body {
 }
 .catering-heading-2 {
   font-size: 18px;
-  padding-top: 180px;
+  padding-top: 220px;
   color: #fff;
   width: 40%;
   margin-left: 100px;
@@ -914,6 +914,7 @@ body {
     color:#ffffffb3
 }
 .tab-menu.tab-menu-gallery{
+    padding-top:50px;
    border-bottom: 2px solid  #ffffffb3 !important;
 }
 .tab-btn.btn-gallery.active{
@@ -1000,7 +1001,7 @@ body {
   .contact-heading {
     font-family: "Allura";
     font-size: 72px;
-    margin-top: 150px;
+    margin-top: 200px;
     color: #fff;
     margin-left: 50px;
   }
@@ -1073,7 +1074,7 @@ body {
 .contact-heading-2 {
     font-family: "Allura";
     font-size: 64px;
-    padding-top: 180px;
+    padding-top: 200px;
     color: #fff;
     width: 40%;
     margin-left: 100px;
